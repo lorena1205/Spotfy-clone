@@ -1,0 +1,212 @@
+/* definir a altura como 100% da tela, para centralizar os outros elementos */
+html, body, #home {
+	height: 100%;
+	/* esconder a barra de rolagem */
+	overflow-x: hidden;
+}
+
+body {
+	background: url(../imagens/capa.png),
+				url(../imagens/ruido.png),
+				linear-gradient(50deg,#ff4169,#7c26f8);
+	background-attachment: fixed;
+	font-family: Helvetica,Arial,sans-serif;
+}
+
+/* Barra de navegação */
+
+nav.navbar-transparente {
+	padding: 15px 0px;
+	background: rgba(0,0,0,0.6);
+}
+
+/* Sobrescrever as formatações do bootstrap */
+.navbar-light .navbar-nav .nav-link {
+	color: white;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+	color: #9bf0e1;
+}
+
+/* botão que aparece quando diminuimos a tela */
+.navbar-light .navbar-toggler {
+    color: rgba(255,255,255,.5);
+    border-color: rgba(255,255,255,0.5);
+}
+
+/* divisor entre os links da barra de navegação */
+.divisor {
+	width: 1px;
+	background: white;
+	margin: 12px 15px;
+}
+
+/* Capa */
+.capa {
+	text-align: center;
+}
+
+/* formato dos dois botões centrais*/
+.btn-custom {
+	color: white;
+	border-radius: 500px;
+	-webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    text-transform: uppercase;
+    transition: background 0.4s, color 0.4s;
+    padding: 10px 20px;
+}
+/* Botão "Aproveite o spotfy Free" */
+.btn-roxo {
+	background: #7c25f8;
+}
+
+/* Fundo do botão "Aproveite o spotfy Free */
+.btn-roxo:hover {
+	background: #6207e3;
+	color: white;
+}
+/* botão "obter spotfy premium" */
+.btn-branco {
+	border: 2px solid white;
+}
+
+/* Fundo do botão "obter spotfy premium */
+.btn-branco:hover {
+	background-color: white;
+	color: black;
+} 
+
+.caixa{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#servicos{
+	background: white;
+}
+
+#recursos{
+	color:white;
+}
+#servicos h2, h3{
+color:#7c25f8;
+}
+
+#recursos h2 {
+color:white;
+}
+
+#recursos h3 {
+	color:#9bf0e1;
+	}
+
+.albuns{
+	padding: 10px 0;
+}
+
+.rotacionar{
+	
+	-ms-transform: rotate(30deg);/* IE 9 */
+	-webkit-transform: rotate(30dg);/* Chome, Safari, Opera */
+	transform: rotate(30deg);
+	padding-left: 80px;
+
+}
+
+footer{
+	background: #000;
+	padding: 50px 0px 20px 0px;
+	position: relative;
+}
+
+footer h4{
+	color:#919496;
+	font-size: 0.8em;
+	text-transform: uppercase;
+}
+
+footer .navbar-nav a {
+color: white;
+font-size: 0.8em;
+
+}
+
+footer .navbar-nav a:hover {
+	color: #9bf0e1;
+	text-decoration: none;
+	
+	}
+
+footer ul li{
+list-style: none;	
+float: right;
+margin:0 5px;
+}	
+
+/* Fonte do "música para todos */
+h1 {
+	font-weight: 900;
+	/* controlar o espaço entre as letras */
+	letter-spacing: -0.05em;
+	margin-bottom: 50px;
+	color: white;
+}
+
+h2 {
+	font-weight: 900;
+	font-size: 3em;
+	letter-spacing: -0.04em;
+	
+}
+
+h3 {
+	font-weight: 900;
+	font-size: 2em;
+	letter-spacing: -0.04em;
+	
+}
+
+
+/* controlar o tamanho da fonte de acordo com o dipositivo */
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+	.btn-custom {
+		margin: 10px 15px;
+	}
+}
+
+/* Dispositivos pequenos (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+	h1 {
+		font-size: 3em;/* 50px */
+	}
+	.btn-custom {
+		margin: 10px 15px;
+	}
+}
+
+/* Dispositivos médios (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+	h1 {
+		font-size: 4em;
+	}
+}
+
+/* Dispositivos grandes (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	h1 {
+		font-size: 5em;
+	}
+}
+
+/* Dispositivos enormes (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+	h1 {
+		font-size: 6em;
+	}
+}
+
+
+
